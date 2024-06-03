@@ -107,7 +107,7 @@ h6{
   line-height: 26.09px;
   /* text-align: center; */
 }
-.places{
+.places, .stay{
   border-bottom: 1px solid var(--white);
 }
 .places .container-lg{
@@ -158,10 +158,10 @@ h6{
   bottom: 8px;
   left: 16px;
 }
-aside ul a{
+aside ul a , .blog a{
   color: rgba(255, 255, 255, 0.55) !important;
 }
-.active{
+.active , .blog .active{
   color: var(--white) !important;
 }
 img{
@@ -169,4 +169,26 @@ img{
 }
 .blog .col-md-3 img{
   height: 300px !important;
+}
+.search_field{
+  background-color: var(--white);
+  width: 70% ;
+}
+.search_field input{
+  border: none !important;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.65); 
+  font-weight: var(--fw7);
+
+}
+.footer .search_field input , .footer .search_field .btn{
+  font-size : 14px;
+}
+.bi-circle-fill{
+  font-size: 10px !important;
+}
+.fs6{
+  font-size: 10px !important;
+  font-weight: var(--fw4);
+  color: rgb(225, 222, 222)
 }
