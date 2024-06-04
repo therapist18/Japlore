@@ -62,7 +62,7 @@ a, .right .btn{
   font-weight: var(--fw7);
   font-size: 110.52px;
   line-height: 141.02px;
-  /*width: 592px;*/
+  /* width: 592px; */
 }
 .frame2{
   background-color: rgba(255, 255, 255, 0.25);
@@ -191,4 +191,19 @@ img{
   font-size: 10px !important;
   font-weight: var(--fw4);
   color: rgb(225, 222, 222)
+}
+.bi-list , .navbar-toggler{
+  color: var(--white);
+  --bs-navbar-toggler-border-color: var(--white);
+}
+h1{
+  font-size: clamp(.1rem , 1rem + 2vw , 4rem) !important;
+}
+@media (max-width: 768px) {
+  .collapse{
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .links a{
+    border-bottom:1px solid var(--white);  
+  }
 }
