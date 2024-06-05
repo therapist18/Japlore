@@ -11,10 +11,9 @@
 </head>
 <body>
 
-  
-   <section class="hero container-fluid pb-5">
+ <section class="hero container-fluid pb-5">
     <div class="container-lg">
-    <nav class="navbar navbar-expand-lg justify-content-between mb-md-4 mb-2">
+    <nav class="navbar navbar-expand-lg justify-content-between mb-md-4 mb-2" id="sticky_top">
       <div class="brand text-white">
         <a href="#" class="nav-link d-flex"> Jap <div class="p-2 "><span class="px-2 mt-2">lore</span></div></a>
       </div>
@@ -27,7 +26,7 @@
 
         <div class="links ">
           <ul class="navbar-nav ">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item swiper-slide"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             <li class="nav-item"><a href="#" class="nav-link">List a property</a></li>
@@ -43,18 +42,20 @@
     </nav>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-xl-6 col-md-7">
         <h1 class="text-white trip py-4 mb-5">
-          Take a trip to Japan
+          Take a trip <br> to Japan <div class="small circle">
+            <div class="circle2"></div>
+          </div>
         </h1>
       </div>
 
-      <!-- <div class="col-md-6" style="transform: translate(1rem, 7rem);">
+      <div class="col-xl-6 col-md-5 first" >
         <div class="circle mx-2">
           <div class="circle2"></div>
         </div>
         <p class="text">Shinjuku <br>Temple</p>
-      </div> -->
+      </div>
     </div>
 
     <!-- <div class="col-md-3">
@@ -64,8 +65,8 @@
     </div> -->
 
     <div class="row text-white pt-2 pb-5">
-      <div class="col-md-8 frame2 p-3">
-        <div class="col-md-3 ps-md-4">
+      <div class=" col-xl-8 frame2 ps-3 py-3 pe-0">
+        <div class="col-md-3 ps-lg-4">
           <h6>Property</h6>
           <div class=""> 
             <small>Select property</small>
@@ -73,27 +74,31 @@
           </div>
         </div>
         
-        <div class="col-md-2 ps-md-4 me-md-5">
+        <div class="col-md-2 ps-md-4 me-md-5" style=" border-left: 2.81px solid var(--white);">
           <h6>City</h6>
-          <div class=""> 
+          <div> 
             <small>Select city</small>
             <i class="bi bi-caret-down-fill"></i>
           </div>
         </div>
         
-        <div class="col-md-3 ps-md-4">
+        <div class="col-md-3 ps-md-4" style=" border-left: 2.81px solid var(--white);">
           <h6>Guests</h6>
           <div class=""> 
             <small>No of guests</small>
             <i class="bi bi-caret-down-fill"></i>
           </div>
         </div>
-        <!-- <div class="col-md-4 d-flex">
-         <button class="btn text-white black px-5">Search</button>
-         <div class="circle mx-2">
-          <div class="circle2"></div>
-        </div>
-        </div>         -->
+
+        <div class="col-md-3 mt-4 mt-sm-0 d-flex align-items-center">
+          <div>
+            <button class="btn text-white black px-5">Search</button>
+          </div>
+
+          <div class="circle">
+           <div class="circle2"></div>
+          </div>
+         </div> 
       </div>
       <div class="col-md-4">
         <div class="float-end">
@@ -107,16 +112,15 @@
     </div>
   </section>
   
-
   <section class="places container-fluid py-5">
     <div class="container-lg">
-      <div class="d-flex justify-content-between py-5">
+      <div class="d-flex justify-content-between py-md-5 py-2">
         <h2>Place of interest</h2>
-        <h4 style="color: rgba(255, 184, 0, 1) !important;">View more places <i class="bi-arrow-right fs-3"></i></h4>
+        <h4 class="desktop-only" style="color: rgba(255, 184, 0, 1) !important;">View more places <i class="bi-arrow-right fs-3"></i></h4>
       </div>
 
-    <div class="gallery d-flex py-5">
-      <div class="col-md-3 text-center">
+    <div class="gallery row py-5 desktop-only">
+      <div class="col-lg-2 mx-auto text-center">
         <img src="img/Tokyo.jpeg">
         <div class="extra mt-3">
           <div class="vl mx-auto"></div>
@@ -127,7 +131,7 @@
         </div>
       </div>
       
-      <div class="col-md-3 text-center">
+      <div class="col-lg-2 mx-auto text-center">
         <div class="extra mb-3">
           <span>Kyoto</span>
           <div class="circle mx-auto mt-2">
@@ -138,7 +142,7 @@
         <img src="img/Kyoto.jpeg">
       </div>
       
-      <div class="col-md-3 text-center">
+      <div class="col-lg-2 mx-auto text-center">
         <img src="img/Yokohama.jpeg">
         <div class="extra mt-3">
           <div class="vl mx-auto"></div>
@@ -149,7 +153,7 @@
         </div>
       </div>
       
-      <div class="col-md-3 text-center">
+      <div class="col-lg-2 mx-auto text-center">
         <div class="extra mb-3">
           <span>Nagasaki</span>
           <div class="circle mt-2 mx-auto">
@@ -161,7 +165,7 @@
         <img src="img/Nagasaki.jpeg">
       </div>
       
-      <div class="col-md-3 text-center">
+      <div class="col-lg-2 mx-auto text-center">
         <img src="img/Yokohama2.jpeg">
         <div class="extra mt-3 mb-2">
           <div class="vl mx-auto"></div>
@@ -171,7 +175,81 @@
           <span>Yokohama</span>
         </div>
       </div>
-    </div>  
+    </div> 
+    
+    <div class="swiper swiper3 mobile-only">
+      <div class="gallery swiper-wrapper py-5 ">
+        <div class="col-md-3 swiper-slide text-center">
+          <img src="img/Tokyo.jpeg">
+          <div class="extra mt-3">
+            <div class="vl mx-auto"></div>
+            <div class="circle mx-auto mb-2">
+              <div class="circle2"></div>
+            </div>
+            <span>Tokyo</span>
+          </div>
+        </div>
+        
+        <div class="col-md-3 swiper-slide text-center">
+          <div class="extra mb-3">
+            <span>Kyoto</span>
+            <div class="circle mx-auto mt-2">
+              <div class="circle2"></div>
+            </div>
+            <div class="vl mx-auto"></div>
+          </div>
+          <img src="img/Kyoto.jpeg">
+        </div>
+        
+        <div class="col-md-3 swiper-slide text-center">
+          <img src="img/Yokohama.jpeg">
+          <div class="extra mt-3">
+            <div class="vl mx-auto"></div>
+            <div class="circle mb-2 mx-auto">
+              <div class="circle2"></div>
+            </div>
+            <span>Yokohama</span>
+          </div>
+        </div>
+        
+        <div class="col-md-3 swiper-slide text-center">
+          <div class="extra mb-3">
+            <span>Nagasaki</span>
+            <div class="circle mt-2 mx-auto">
+              <div class="circle2"></div>
+            </div>
+            <div class="vl mx-auto"></div>
+          </div>
+
+          <img src="img/Nagasaki.jpeg">
+        </div>
+        
+        <div class="col-md-3 swiper-slide text-center">
+          <img src="img/Yokohama2.jpeg">
+          <div class="extra mt-3 mb-2">
+            <div class="vl mx-auto"></div>
+            <div class="circle mx-auto">
+              <div class="circle2"></div>
+            </div>
+            <span>Yokohama</span>
+          </div>
+        </div>
+
+        <div class="col-md-3 swiper-slide text-center">
+          <div class="extra mb-3">
+            <span>Nagasaki</span>
+            <div class="circle mt-2 mx-auto">
+              <div class="circle2"></div>
+            </div>
+            <div class="vl mx-auto"></div>
+          </div>
+
+          <img src="img/Nagasaki.jpeg">
+        </div>
+      </div>
+    </div> 
+    <h4 class="mobile-only" style="color: rgba(255, 184, 0, 1) !important;">View more places <i class="bi-arrow-right fs-3"></i></h4>
+
     </div>
   </section>
 
