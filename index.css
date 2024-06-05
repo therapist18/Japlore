@@ -38,6 +38,10 @@ a, .right .btn{
 .black{
   background-color: var(--black) !important;
 }
+/* .sticky-top.scrolled{
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 100%;
+} */
 .brand a{
   /* font-size: 52.43px; */
   font-size: clamp(2rem, 2rem + 3vw, 3.26rem) !important;
@@ -74,12 +78,9 @@ a, .right .btn{
 h6{
   font-weight: var(--fw7) !important;
 }
-.col-lg-3:nth-child(1){
-  border-right: 2.81px solid var(--white);
-}
-.frame2 div:nth-child(3){
+/* .frame2 div:nth-child(3) , .frame2 div:nth-child(2) {
   border-left: 2.81px solid var(--white);
-}
+} */
 .polygon{
   display: flex;
   align-items: flex-end;
@@ -97,6 +98,7 @@ h6{
   background: var(--black);
   transform: translate(8.5px, 8px);
 }
+
 .gallery .circle{
   background: var(--white);
 }
@@ -125,10 +127,11 @@ h6{
   /* background-color: aqua; */
   width: 210px;
   height: 200px;
+  max-width: 100%;
 }
-.gallery .col-md-3{
+/* .gallery .col-md-3{
   width: 21% !important;
-}
+} */
 .vl{
   height: 40px;
   /* text-align: center; */
@@ -203,6 +206,21 @@ img{
   color: var(--white);
   --bs-navbar-toggler-border-color: var(--white);
 }
+.first{
+  align-content: space-evenly;
+}
+.mobile-only{
+  display: none !important;
+}
+@media(max-width: 1025px){
+  .desktop-only{
+    display: none !important;
+  }
+  .mobile-only{
+    display: block !important;
+  }
+}
+
 @media (max-width: 768px) {
   .collapse{
     background-color: rgba(255, 255, 255, 0.25);
@@ -214,23 +232,40 @@ img{
     line-height: 1.1;
     font-weight: var(--fw7);
   }
+  .small {
+    display: none !important;
+  }
+  aside.swiper4 .navbar-nav{
+    flex-direction: row;
+  }/*
+  aside .navbar-nav a{
+    font-size: 12px !important;
+
+  } */
+
 }
 @media (max-width:445px){
-  .frame2 div:nth-child(3) {
+  .frame2 div:nth-child(3) , .frame2 div:nth-child(2) {
     border-left: none !important;
   }
-  .frame2{
-    display: block;
+  .frame2 , .small{
+    display: block !important;
+  }
+  .small{
+    margin: -2rem 15rem;
   }
   .frame2 div{
     display: flex;
     justify-content: space-between;
   }
-  /* .trip{
-    line-height: 88px;
-  } */
-
+  .hero .first , .gallery.d-flex.py-5.desktop-only{
+    display: none !important;
+  }
+  .bi-caret-down-fill{
+    margin-left:4px  ;
+  }
   .trip {
     line-height: 1;
   }
+  
 }
