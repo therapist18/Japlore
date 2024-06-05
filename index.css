@@ -39,7 +39,8 @@ a, .right .btn{
   background-color: var(--black) !important;
 }
 .brand a{
-  font-size: 52.43px;
+  /* font-size: 52.43px; */
+  font-size: clamp(2rem, 2rem + 3vw, 3.26rem) !important;
   line-height: 63.45px;
   font-weight: var(--fw6);
   height: 63px;
@@ -47,9 +48,10 @@ a, .right .btn{
 }
 .brand a span{
   color: var(--black);
-  font-size: 36.34px;
+  /* font-size: 36.34px; */
+  font-size: clamp(1rem, 1.5rem + 1vw, 2.26rem) !important;
   background-color: var(--white);
-  line-height: 39.04px;
+  /* line-height: 39.04px; */
   /* height: 46.79px; */
   height: 37.79px;
   display: flex;
@@ -60,8 +62,9 @@ a, .right .btn{
 }
 .trip{
   font-weight: var(--fw7);
-  font-size: 110.52px;
-  line-height: 141.02px;
+  font-size: clamp(3rem, 2.4rem + 5vw, 7rem) !important;
+  line-height: 1.2;
+  /* font-size: 110.52px; */
   /* width: 592px; */
 }
 .frame2{
@@ -147,6 +150,9 @@ h6{
   font-size: 1.2rem;
   margin-left: 6px;
 }
+.frame2 .bi::before, [class*=" bi-"]::before, [class^=bi-]::before{
+  vertical-align: -0.3em !important;
+}
 /* .top-left{
   position: absolute;
   top: 8px;
@@ -196,14 +202,26 @@ img{
   color: var(--white);
   --bs-navbar-toggler-border-color: var(--white);
 }
-h1{
-  font-size: clamp(.1rem , 1rem + 2vw , 4rem) !important;
-}
 @media (max-width: 768px) {
   .collapse{
     background-color: rgba(255, 255, 255, 0.25);
   }
   .links a{
     border-bottom:1px solid var(--white);  
+  }
+  .trip {
+    line-height: 1.1;
+  }
+}
+@media (max-width:445px){
+  .frame2 div:nth-child(3) {
+    border-left: none !important;
+  }
+  /* .trip{
+    line-height: 88px;
+  } */
+
+  .trip {
+    line-height: 1;
   }
 }
