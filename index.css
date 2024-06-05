@@ -69,6 +69,7 @@ a, .right .btn{
 }
 .frame2{
   background-color: rgba(255, 255, 255, 0.25);
+  display: flex;
 }
 h6{
   font-weight: var(--fw7) !important;
@@ -211,11 +212,19 @@ img{
   }
   .trip {
     line-height: 1.1;
+    font-weight: var(--fw7);
   }
 }
 @media (max-width:445px){
   .frame2 div:nth-child(3) {
     border-left: none !important;
+  }
+  .frame2{
+    display: block;
+  }
+  .frame2 div{
+    display: flex;
+    justify-content: space-between;
   }
   /* .trip{
     line-height: 88px;
